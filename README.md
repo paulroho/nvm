@@ -110,7 +110,7 @@ Since OS X 10.9, `/usr/bin/git` has been preset by Xcode command line tools, whi
 
 If you get `nvm: command not found` after running the install script, one of the following might be the reason:
 
-  - Since macOS 10.15, the default shell is `zsh` and nvm will look for `.zshrc` to update, none is installed by default. Create one with `touch ~/.zshrc` and run the install script again.
+  - Since macOS 10.15, the default shell is `zsh` and nvm will look for `.zshrc` to update, none is installed by default. Create one with `touch ~/.zshrc` and run the install script again (piping the script `install.sh` to `zsh` now).
 
   - If you use bash, the previous default shell, your system may not have a `.bash_profile` file where the command is set up. Create one with `touch ~/.bash_profile` and run the install script again. Then, run `source ~/.bash_profile` to pick up the `nvm` command.
 
